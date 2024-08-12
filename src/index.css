@@ -1,0 +1,151 @@
+/* App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #c6f4ff;
+}
+
+.App {
+  padding: 10px;
+
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: white;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
+}
+
+span {
+  text-transform: capitalize;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding: 20px;
+  background-color: #ffffff;
+  gap: 15px;
+}
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 400px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+p {
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+}
+
+.weather-info {
+  text-align: left;
+  width: 100%;
+  max-width: 400px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.weather-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.weather-info p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  input {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .weather-info h2 {
+    font-size: 1.3rem;
+  }
+
+  .weather-info p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  input {
+    font-size: 0.8rem;
+    padding: 6px;
+  }
+
+  button {
+    margin-top: 15px;
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+
+  .weather-info {
+    padding: 15px;
+  }
+
+  .weather-info h2 {
+    font-size: 1.2rem;
+  }
+
+  .weather-info p {
+    font-size: 0.8rem;
+  }
+}
